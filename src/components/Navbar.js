@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import AccountImg from "../Images/TestAccount.png";
 
 import Product from "./Product";
+import ProductDetails from "./Sidebar/ProductDetails";
 
 
 const Navbar = () => {
@@ -59,6 +60,7 @@ const Navbar = () => {
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/productdetails/:puserid" element={<ProductDetails/>}/>
       
       </Routes>
     </>
