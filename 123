@@ -1,0 +1,183 @@
+
+/* Navbar Css */
+
+.links nav{
+    list-style: none;
+    color: white;
+    display: grid;
+    grid-template-columns:4rem repeat(4, 5rem);
+    align-items: center;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    
+    line-height: 138.9%;
+  }
+
+  .links li a{
+    /* border-bottom: 2px solid #fff500; */
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    
+  }
+  
+
+  .links li a::after{
+      content: "";
+      position: absolute;
+      width: 65%;
+      border-bottom: 2px solid #fff500;
+      top:23px;
+      left: 0;
+
+  }
+  .tut{
+      color: white;
+      font-weight: normal;
+}
+  .abt{
+    color: white;
+    font-weight: normal;
+}
+.cntct{
+    color: white;
+    font-weight: normal;
+}
+  .currentTab{
+color: red;
+  }
+  
+  .links li:first-child {
+    grid-column: 1/2;
+    
+  }
+  
+  .menu_links button {
+    background: #fff500;
+    width: 110px;
+    height: 45px;
+    grid-column: 4/5;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+  }
+  
+  .menu_links {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 5fr repeat(4, 8rem);
+    margin-top: 23px;
+    background: transparent;
+  }
+  .demoPro{
+      width:45px;
+  }
+  /* Navbar Css Ends */
+
+  /* Main section CSs */
+.index{
+    margin-left: 36px;
+    margin-top: 106px;
+}
+.logo{
+    width: 340px;
+    height: 45px;
+    top: 0px;
+    left: 0px;
+}
+.line2-1{
+    width: 1362px;
+    height: 86px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Kiona;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 151.5%;
+    color: white;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 45px 0px;
+}
+.line2-2{
+    width: 1362px;
+    height: 86px;
+    left: 0px;
+    top: 0px;
+
+    font-family: kiona;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 151.5%;
+    color:yellow;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 45px 0px;
+}
+.disc{
+    width: 1267px;
+    height: 132.54px;
+    left: 0px;
+    top: 131px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
+}
+
+.buttons{
+    /* width: 100vw; */
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+
+    
+}
+.buttons button{
+
+    width: 110px;
+    height: 45px;
+    left: 122px;
+    background-color: yellow;
+    border-radius: 2px;
+    border:2px solid yellow;
+
+    margin: 10px;
+    font-family: Noto Sans;
+    font-size: 16px;
+
+}
+
+.buttons :first-child{
+
+    left: 140px;
+    top: 0px;
+    
+    background-color: transparent;
+
+    /* Inside Auto Layout */
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 16px;
+    color: white;
+    
+}

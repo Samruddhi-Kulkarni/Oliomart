@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+abc{
+  color: #0cb5bb;
+  color: #FFFFFF;
+  color: #000000;
+  color: #FFF500;
+  color: #757575;
+  color: #000814;
+}
+
+body{
+  background-image: url("./Images/BgImage.png");
+}
+
+.menu_links:hover{
+  border-bottom: 1px solid #FFF500;
+  cursor: pointer;
+}
+.profileDemo{
+  height: 36px;
+}

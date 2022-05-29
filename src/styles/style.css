@@ -1,0 +1,78 @@
+@import url("http://fonts.cdnfonts.com/css/kiona-2");
+@import url("http://fonts.cdnfonts.com/css/noto-sans");
+
+::selection {
+  background-color: #fff500;
+  color: black;
+}
+
+body {
+  background-image: url("../Images/BgImage.png");
+  background-repeat: no-repeat;
+  /* background-position: 100%; */
+  background-size: cover;
+}
+
+.profileDemo {
+  height: 36px;
+}
+
+.logo {
+  justify-content: center;
+  margin: auto;
+}
+
+.active {
+  border-bottom: #fff500;
+}
+
+.sidebarComponent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.search_field {
+  position: relative;
+  display: flex;
+  width: 231px;
+}
+.searchProduct {
+  width: 231px;
+  border: 1.5px solid #fff500;
+  padding: 11.5px;
+
+  height: 45px;
+}
+.searchIcon {
+  position: absolute;
+  top: 5.5px;
+  justify-content: flex-end;
+  right: 20px;
+}
+
+.horizontalLine {
+  width: 180px;
+  background: #fff500;
+  height: 1px;
+  margin-top: 20px;
+}
+
+.categoriesList {
+  margin-top: 45px;
+  width: 231px;
+  border: 1.5px solid #fff500;
+  padding: 28px 30px;
+}
+
+.categoriesType {
+  padding-top: 22px;
+}
+.border_trade{
+  border: 1px solid #FFF500;
+}
+
+.border-rad{
+  border-radius: 3px;
+}

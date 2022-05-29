@@ -1,0 +1,75 @@
+/* @import url('https://fonts.googleapis.com/css2'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Noto+Sans&family=Roboto:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../images/frame.jpg");
+  /* background-position: initial; */
+  background-blend-mode: normal;
+  /* background: black; */
+}
+
+.links {
+  list-style: none;
+  color: white;
+  display: grid;
+  grid-template-columns:4rem repeat(4, 5rem);
+  align-items: center;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 138.9%;
+}
+
+
+.links li:first-child {
+  grid-column: 2/3;
+  
+}
+
+.menu_links button {
+  background: #fff500;
+  width: 110px;
+  height: 38px;
+  grid-column: 4/5;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 16px;
+  font-family: 'Noto Sans';
+}
+
+.menu_links {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 5fr repeat(4, 8rem);
+  margin-top: 23px;
+  background: transparent;
+}
+.demoPro{
+    width:45px;
+}
+
+
+/* Main Section of index */
+/* .mainIndex{
+    color: White;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.olioLogo{
+  position: absolute;
+  top: 0;
+}
+.tagLine{
+  position: absolute;
+  left: 0;
+}
+.mainIndexTxt{
+  position: absolute;
+  bottom: 0;
+} */
