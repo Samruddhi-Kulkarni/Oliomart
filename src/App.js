@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 
 // import Sidebar from "./components/Sidebar/Sidebar";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Modal from "./components/modals/Modal";
 
 
@@ -19,7 +19,7 @@ const App = () => {
       
       { <Navbar /> }
       {<Modal/> }
-      { /*<Footer/> */}
+     { <Footer/> }
       {/* <Sidebar/> */}
      
     </>

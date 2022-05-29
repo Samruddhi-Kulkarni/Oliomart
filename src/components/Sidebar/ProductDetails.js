@@ -4,13 +4,13 @@ import { useParams } from 'react-router-dom'
 const ProductDetails = () => {
 
     const {puserid} = useParams();
-    const [pdetails,setPdetails]=useState();
+    const [pdetails,setPdetails]=useState([]);
     const[loading,setLoading]=useState(false);
-   
-    
+
+
     const getProductDetails = async() =>{
-       
-        const response = await fetch(`https://oliomart.herokuapp.com/getproducts?search=${puserid}`, {
+        setLoading(true);
+        const response = await fetch(`https://oliomart.herokuapp.com/getproducts/${puserid}`, {
             method: "GET",
             headers: {
               Accept: "application/json",
@@ -19,13 +19,16 @@ const ProductDetails = () => {
                 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWUwMTIyYjFmY2I2ODE3ZTVlODViZGYiLCJpYXQiOjE2NTM2NTc3NDl9.1PY0LfeVj8jwMx2urvgglEdjDBidBKxfx7mqb6euDxE",
               mode: "cors",
             },
-          });
-         const data=response.json();
-         console.log(data);
-         setPdetails(await response.json());
-        
+          }).then((response)=>{
+            
+          })
+      
+          setPdetails(await response.json());
+          setLoading(false)
     }
-    
+    useEffect(()=>{
+        getProductDetails();
+    },[])
 
 
   return (
