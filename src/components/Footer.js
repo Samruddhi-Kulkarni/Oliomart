@@ -3,7 +3,7 @@ import Logo from "../Images/oliomart.png";
 const Footer = () => {
   return (
     <>
-      <footer class="text-primary body-font">
+      <footer class="text-primary body-font mt-0">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto  md:text-left">
       <img src={Logo} className="ml-10 "  /> 
       </div>

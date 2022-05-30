@@ -4,10 +4,12 @@ import Main from "../components/Main";
 import Tutorial from "../components/Tutorial";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import AccountImg from "../Images/TestAccount.png";
+
 
 import Product from "./Product";
 import ProductDetails from "./Sidebar/ProductDetails";
+import Profile from "./Profile";
+
 
 
 const Navbar = () => {
@@ -41,16 +43,17 @@ const Navbar = () => {
             </Link>
           </nav>
 
-          <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-primary lg:items-center lg:justify-center mb-4 md:mb-0"></a>
+          <a href="asd" className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-primary lg:items-center lg:justify-center mb-4 md:mb-0"></a>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
             <button className="mr-3 bg-trade inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-secondary mt-4 md:mt-0">
               Sell On Olio
             </button>
-            <img src={AccountImg} className="profileDemo" />
+         <Profile/>
           </div>
         </div>
+        
       </header>
-
+    
 
 
       <Routes>
@@ -61,8 +64,9 @@ const Navbar = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/productdetails/:puserid" element={<ProductDetails/>}/>
-      
+       
       </Routes>
+     
     </>
   );
 };
